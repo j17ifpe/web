@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/cada.css" media="screen">
+    <script defer src="./js/scripts.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+       <h1 id="titulo">Cadastro de Usuário</h1>
+       <p id="subtitulo">Complete suas informações!</p>
+       <br>
+   </div> 
+    <div id="error"></div>
+   <form id="form" action="#" method="post">
+     <fieldset class="grupo">
+       <div class="campo">
+         <label for="nome">  <strong> Nome </strong></label>
+         <input type="text" name="nome" id="nome"  required>
+       </div>
+       <div class=" campo">
+        <label for="Sobrenome"> <strong> Sobrenome</strong></label>
+        <input type="text" name="Sobrenome" id="Sobrenome" required>
+      </div>
+    </fieldset>
+    <div class=" campo">
+      <label for="email"> <strong> Email</strong></label>
+      <input type="email" name="email" id="email" required>
+    </div>
+
+      <div class="campo">
+        <label> <strong> Você gostaria de pesquisar empresas que oferecem serviços/tecnologias de?</strong></label>
+        <label>
+        <input type="radio" name="devweb" value="frontend" checked>Gestão e tecnologia
+       </label>
+       <label>
+        <input type="radio" name="devweb" value="backend">Maketing, Venda e Atendimento
+       </label>
+       <label>
+        <input type="radio" name="devweb" value="fullstack">Pagamento e Segurança
+       </label>
+      </div>
+      <div  class="campo">
+        <label for="Senioridade" > <strong> Que tipo de consumidor é você no processo de compras</strong></label>
+         <select  id="Senioridade">
+           <option selected disabled value="">Escolha...</option>
+           <option >Iniciador</option>
+           <option >Influenciador</option>
+           <option >Comprador</option>
+           <option >Usuário</option>
+         </select>
+      </div>
+      <fieldset class="grupo">
+      <div id="check">
+       <label> <strong> Selecione as redes sociais que você mais usa :</strong>  </label> <br>
+       <input type="checkbox" id="Tecnologia" name="tecnologia1" value="Facebook">
+       <label for="tecnologia1"> Facebook</label>
+       <input type="checkbox" id="Tecnologia2" name="tecnologia2" value="WhatsApp">
+       <label for="tecnologia2"> WhatsApp</label>
+       <input type="checkbox" id="Tecnologia3" name="tecnologia3" value="Instagram">
+       <label for="tecnologia3"> Instagram</label>
+       <input type="checkbox" id="Tecnologia4" name="tecnologia4" value="Messenger">
+       <label for="tecnologia4"> Messenger</label>
+       <input type="checkbox" id="Tecnologia5" name="tecnologia5" value="Twitter">
+       <label for="tecnologia5"> Twitter</label>
+       <input type="checkbox" id="Tecnologia6" name="tecnologia6" value="Telegram">
+       <label for="tecnologia6"> Telegram</label>
+      </div>
+      </fieldset>
+       <div class=" campo">
+        <label > <strong> Conte um pouco da sua experiencia:</strong></label>
+        <textarea name="experiencia" id="experiencia" style="width: 40em;"  rows="3"></textarea> 
+       </div>
+         <button class="botao" type="submit">Concluido</button>
+          <a href="../index.html" target="_self"> Voltar</a>
+    
+   </form>
+
+</body>
+</html>
